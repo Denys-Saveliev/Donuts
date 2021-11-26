@@ -1,0 +1,47 @@
+.hero {
+   padding-top: 30px;
+
+   @media screen and (min-width: 768px) {
+      padding-top: 10px;
+   }
+
+   @media screen and (min-width: 1280px) {
+      padding-top: 55px;
+   }
+}
+
+.hero__title {
+   font-family: Caveat Brush;
+   margin-bottom: 3px;
+   text-align: center;
+   @include font(400, 30px, 1.26);
+   color: $main-color;
+
+   @media screen and (min-width: 768px) {
+      text-align-last: left;
+   }
+
+   @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+      @include font(400, 64px, 1.01);
+      text-align: left;
+   }
+}
+
+.hero__text {
+   margin-bottom: 25px;
+   @include font(500, 16px, 1.25);
+   text-align: center;
+   color: var(--main-color);
+
+   @media screen and (min-width: 768px) {
+      margin-bottom: 14px;
+      text-align-last: left;
+   }
+
+   @media screen and (min-width: 1280px) {
+      margin-bottom: 18px;
+      text-align: left;
+      @include font(500, 24px, 1.21);
+   }
+}

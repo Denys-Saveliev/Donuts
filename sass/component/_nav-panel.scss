@@ -1,0 +1,26 @@
+.nav-panel {
+   @media screen and (max-width: 1279px) {
+      display: none;
+   }
+
+   @media screen and (min-width: 1280px) {
+      display: flex;
+   }
+}
+
+.nav-panel__item:not(:last-child) {
+   @media screen and (min-width: 1280px) {
+      margin-right: 20px;
+   }
+}
+
+.nav-panel__link {
+   @media screen and (min-width: 1280px) {
+      padding: 52px 0;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.22;
+      color: var(--main-color);
+   }
+}

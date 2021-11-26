@@ -1,123 +1,42 @@
-:root {
-    --main-color: #2E2520;
-    --main-bg-color: #FFFFF9;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--main-bg-color);
-    font-style: normal;
-    font-size: 18px;
-}
-
-h1, h2, h3, p, ul{
-    margin: 0;      
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-} 
-
-.section {
-    padding: 30px 0;
-}
-
-.container {    
-    margin: 0 auto;    
-    padding: 0 15px;    
-    width: 855px;
-}
-
-/* Header */
-
-.header-container {
-    display: flex;
-    align-items: center;    
-}
-
-.nav-logo-link {
-    margin-right: 38px;
-   
-}
-
-.nav-panel-list {
-    display: flex;    
-}
-
-.nav-panel-item:not(:last-child) {
-    margin-right: 20px;
-}
-
-.nav-panel-link {
-    padding: 52px 0;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    color: var(--main-color);
-}
-
-/* Hero section */    
-
-
-.hero-title {
-    font-family: Caveat Brush;
-    margin-bottom: 15px;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: calc(65 /64);  
-    color: var(--main-color);
-}
-
-.hero-text {
-    margin-bottom: 18px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: calc(29 / 24);
-    color: var(--main-color);
-}
-
-.hero-btn {    
+ .hero-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 158px;
-    height: 45px;      
-    line-height: calc(65 / 24); 
+    height: 45px;
+    line-height: calc(65 / 24);
     background-color: #AB816C;
     border-radius: 25px;
     margin-bottom: 55px;
-}
+ }
 
-.hero-btn-link {
+ .hero-btn__link {
     font-family: Caveat Brush;
     font-weight: 400;
     font-size: 24px;
-    text-decoration: none;      
+    text-decoration: none;
     color: #ffffff;
-}
+ }
 
-.hero-btn:hover,
-.hero-btn:focus {
+ .hero-btn:hover,
+ .hero-btn:focus {
     background-color: #876655;
     cursor: pointer;
-}
+ }
 
-.hero-btn:active {
+ .hero-btn:active {
     background-color: #674D40;
-}
+ }
 
-.hero-social-list {
+ .hero-social {
     display: flex;
-    
-}
 
-.hero-social-item:not(:last-child) {
+ }
+
+ .hero-social__item:not(:last-child) {
     margin-right: 12px;
-}
+ }
 
-.hero-social-icon {
+ .hero-social__icon {
     fill: var(--main-color);
-}
-
+ }
