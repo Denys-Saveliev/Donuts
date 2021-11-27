@@ -353,7 +353,7 @@ img {
 
 @media screen and (min-width: 1280px) {
   .nav-panel__link {
-    padding: 52px 0;
+    padding: 25px 0;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
@@ -406,7 +406,8 @@ img {
 
 @media screen and (min-width: 1280px) {
   .header__container {
-    justify-content: start;
+    display: flex;
+    align-items: center;
   }
 }
 
