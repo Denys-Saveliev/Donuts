@@ -1,8 +1,10 @@
 .hero {
    padding-top: 30px;
+   text-align: center;
 
    @media screen and (min-width: 768px) {
       padding-top: 10px;
+      text-align: left;
    }
 
    @media screen and (min-width: 1280px) {
@@ -13,7 +15,7 @@
 .hero__title {
    font-family: Caveat Brush;
    margin-bottom: 3px;
-   text-align: center;
+
    @include font(400, 30px, 1.26);
    color: $main-color;
 
@@ -31,17 +33,81 @@
 .hero__text {
    margin-bottom: 25px;
    @include font(500, 16px, 1.25);
-   text-align: center;
+
    color: var(--main-color);
 
    @media screen and (min-width: 768px) {
-      margin-bottom: 14px;
-      text-align-last: left;
+      margin-bottom: 25px;
+      text-align: left;
    }
 
    @media screen and (min-width: 1280px) {
-      margin-bottom: 18px;
-      text-align: left;
+      margin-bottom: 30px;
       @include font(500, 24px, 1.21);
+   }
+}
+
+.hero-btn__link {
+   display: inline-block;
+   margin-bottom: 45px;
+
+   @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+   }
+
+   @media screen and (min-width: 1280px) {
+      margin-bottom: 65px;
+      font-size: 24px;
+   }
+}
+
+.hero-social {
+   display: flex;
+   justify-content: center;
+
+   @media screen and (min-width: 768px) {
+      justify-content: start;
+   }
+}
+
+.hero-social__item:not(:last-child) {
+   margin-right: 9px;
+
+   @media screen and (min-width: 768px) {
+      margin-right: 12px;
+   }
+}
+
+.hero-social__icon {
+   fill: $main-color;
+}
+
+.hero-social__icon--twitter {
+   width: 19px;
+   height: 15px;
+
+   @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 19px;
+   }
+}
+
+.hero-social__icon--instagram {
+   width: 15px;
+   height: 15px;
+
+   @media screen and (min-width: 768px) {
+      width: 19px;
+      height: 19px;
+   }
+}
+
+.hero-social__icon--facebook {
+   width: 8px;
+   height: 15px;
+
+   @media screen and (min-width: 768px) {
+      width: 10px;
+      height: 19px;
    }
 }

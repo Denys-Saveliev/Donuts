@@ -1,0 +1,19 @@
+.btn {
+   font-family: Caveat Brush;
+   font-weight: 400;
+   padding: 10px 45px;
+   border-radius: 25px;
+   text-decoration: none;
+   color: $btn-color;
+   background-color: $btn-bg-color;
+
+   &:hover,
+   &:focus {
+      background-color: #876655;
+      cursor: pointer;
+   }
+
+   &:active {
+      background-color: #674d40;
+   }
+}
